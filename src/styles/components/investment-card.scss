@@ -1,0 +1,22 @@
+.investment-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  
+    h3 {
+      margin: 0;
+    }
+  
+    p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  
