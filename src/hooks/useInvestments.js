@@ -25,7 +25,7 @@ const useInvestments = (symbol = "IBM") => {
     };
 
     getInvestments();
-  }, [symbol]); // Re-fetch when symbol changes
+  }, [symbol]); 
 
   return { investments, loading, error };
 };

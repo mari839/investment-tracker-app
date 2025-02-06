@@ -5,9 +5,8 @@ import InvestmentCard from "../components/InvestmentCard";
 const Investments = () => {
   const { investments, loading, error } = useInvestments("IBM");
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 12; // 4 cards per row * 3 rows = 12 cards per page
+  const itemsPerPage = 12; 
 
-  // Calculate the indices for slicing the investments array
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = investments.slice(indexOfFirstItem, indexOfLastItem);
@@ -36,7 +35,6 @@ const Investments = () => {
             ))}
           </div>
 
-          {/* Pagination Controls */}
           <div className="pagination">
             <button
               onClick={() => setCurrentPage(currentPage - 1)}

@@ -1,15 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import '../styles/pages/settings.scss'; // Importing SCSS styles
+import React, { useState } from 'react';
+import '../styles/pages/settings.scss'; 
 
 const Settings = () => {
   const [apiKey, setApiKey] = useState(localStorage.getItem('apiKey') || '');
 
-  // Handle API key change
   const handleApiKeyChange = (e) => {
     setApiKey(e.target.value);
   };
 
-  // Handle Save button click
   const handleSave = () => {
     if (apiKey) {
       localStorage.setItem('apiKey', apiKey);
@@ -23,7 +21,6 @@ const Settings = () => {
     <div className="settings-page">
       <h2>Settings</h2>
 
-      {/* API Key Input */}
       <div className="setting-item">
         <label htmlFor="api-key">API Key</label>
         <input
@@ -35,7 +32,6 @@ const Settings = () => {
         />
       </div>
 
-      {/* Save Button */}
       <div className="setting-item">
         <button onClick={handleSave}>Save API Key</button>
       </div>

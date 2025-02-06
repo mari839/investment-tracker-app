@@ -2,28 +2,27 @@
   text-align: center;
   padding: 20px;
   width: 100%;
-  max-width: 1300px;  // Ensures proper layout width
+  max-width: 1300px; 
   margin: 0 auto;
 }
 
 .investment-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); // 4 columns
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin: 20px auto;
   width: 100%;
-  max-width: 1200px; // Prevents excessive stretching
+  max-width: 1200px; 
 }
 
-/* Responsive adjustments */
 @media (max-width: 1200px) {
   .investment-list {
-    grid-template-columns: repeat(2, 1fr); // 2 columns on medium screens
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 768px) {
   .investment-list {
-    grid-template-columns: 1fr; // 1 column on small screens
+    grid-template-columns: 1fr; 
   }
 }
